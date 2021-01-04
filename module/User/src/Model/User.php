@@ -6,12 +6,12 @@ namespace User\Model;
 
 class User
 {
-    private $user_name;
-    private $email;
-    private $password;
-    private $id;
+    private string $user_name;
+    private string $email;
+    private string $password;
+    private int $id;
 
-    public function __construct($user_name, $email, $password, $id = null)
+    public function setValue($user_name, $email, $password, $id = 1)
     {
         $this->user_name = $user_name;
         $this->email = $email;
